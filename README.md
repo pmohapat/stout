@@ -190,6 +190,7 @@ want to use move semantics in the future.
 
 ### UUID
 
+Wrapper around Boost UUID library.
 
 <a href="collections"></a>
 
