@@ -175,11 +175,21 @@ want to use move semantics in the future.
 
 ### Result
 
+To encapsulate the result of an operation, function call. Contains the
+base state and a string to store any message. Templatized to contain
+custom values: bool or int or a whole object. E.g.:
+
+```cpp
+  Result<std::string> result = os::read(fd, sizeof(size));
+```
 
 <a href="try"></a>
 
 ### Try
 
+Similar to [Result](#result); think of Try when you are thinking
+non-zero/non-null value; think of Result when you are thinking of
+zero or non-zero value.
 
 <a href="stopwatch"></a>
 
