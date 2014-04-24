@@ -185,12 +185,27 @@ want to use move semantics in the future.
 
 ### Stopwatch
 
+A simple stopwatch service. Uses primitives from [Duration](#duration)
+```cpp
+  Stopwatch s;
+  s.start();
+
+  //Do something
+
+  std::cout << "\n" << s.elapsed() << "\n";
+  s.stop();
+```
 
 <a href="uuid"></a>
 
 ### UUID
 
-Wrapper around Boost UUID library.
+Wrapper around Boost UUID library. Use it as:
+
+```cpp
+	UUID u1 = UUID::random();
+	std::string s1 = u1.toString();
+```
 
 <a href="collections"></a>
 
